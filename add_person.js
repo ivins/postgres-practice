@@ -19,7 +19,7 @@ function addPerson (first, last, date) {
     .insert({ first_name: first, last_name: last, birthdate: date })
     .into('famous_people')
     .asCallback((err, rows) => {
-      if (err) { console.log(err);}
+      if (err) { console.log(err); }
       console.log('Added successfully: ', first, last, date);
     });
 }
